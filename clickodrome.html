@@ -11,14 +11,18 @@
 
       <body onclick="incrementer()">
         <div id = "affichage">
-        <button onclick="Lancer();setTimeout(Timer, 3000);">Try it</button>
-        <h1 class = "nbDeClick" id = "nbDeJeu">Nombre de clique que vous venez de faire : </h1>
+          <button onclick="Lancer();setTimeout(Timer, 3000);">Lancer le jeu</button>
+          <h1 class = "nbDeClick" id = "nbDeJeu">Nombre de clique que vous venez de faire : </h1>
           <hi id="ancien"></h1>
         </div>
         <div class = "ecran" id="Jeu">
+          <a> Il vous reste : </a>
+          <a id = "timer_div"></a>
+          <a> secondes </a>
           <h1>Nombre de clique : </h1>
           <hi id="insert"></h1>
         </div>
-       
+
+       <!--  -->
     </body>
     </html>
