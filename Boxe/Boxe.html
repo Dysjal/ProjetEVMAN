@@ -1,11 +1,23 @@
 <!DOCTYPE html>
     <html lang="fr">
       <head>
-       
+        <meta charset="UTF-8" />
+
+        <link rel="stylesheet" href="./style.css">
+        <script src="./Boxe.js"></script>
+
+        <title>Clickodrome</title>
       </head>
 
-      <body>
-        
+      <body onload="Creation()">
+      	<a href="../clickodrome.html">Retour au menu des jeux</a><br>
+      	<button onclick="Lancer();setTimeout(Timer, 3000);" >Lancer le jeu</button>
+
+
+      	<div id = " A afficher">
+        <canvas id="myCanvas" width="200" height="100" style="border:0px solid #d3d3d3;" >
+Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
        <!--  -->
     </body>
     </html>
