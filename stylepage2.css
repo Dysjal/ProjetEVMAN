@@ -1,0 +1,54 @@
+body {
+  text-align:center;
+  color:#d63031;
+  font-family: 'Righteous', cursive;
+
+  font-size:50px;
+  overflow:scroll;
+    background-color: #fad390;
+}
+
+.drapeaux{
+  width:25%;
+  margin-top:5%;
+}
+
+#titre div {
+  overflow:hidden;
+  margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+div:last-of-type {  /*disparition des derniers mots*/
+  animation: reveal 7s infinite;
+
+
+
+}
+
+div:last-of-type span { /*rapidité de l'apparition des derniers mots*/
+
+  animation: slidein 50s;
+
+}
+
+/*animation des premiers mots*/
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:1;}
+}
+
+
+
+/*révélation des derniers mots*/
+@keyframes reveal {
+    0% {opacity:0;width:80%;}
+    20% {opacity:1;width:100%;}
+    30% {width:100%px;}
+    80% {opacity:2;}
+    100% {opacity:0;width:100%;}
+}

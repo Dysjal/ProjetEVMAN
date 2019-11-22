@@ -28,7 +28,7 @@ function Lancer() {
 
   var x = document.getElementById("Jeu");
     x.style.display = "block";
-    
+
   var y = document.getElementById("affichage");
     y.style.display = "none";
 
