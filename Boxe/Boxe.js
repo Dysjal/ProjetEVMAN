@@ -21,6 +21,7 @@ ctx.stroke();
 
 function Timer(){
     seconds_left = 15;
+    console.log(seconds_left);
     document.getElementById('timer_div').innerHTML = seconds_left;
 
   var x = document.getElementById("Jeu");
@@ -38,7 +39,7 @@ function Timer(){
    var interval = setInterval(function() {
     document.getElementById('timer_div').innerHTML = --seconds_left;
     console.log(seconds_left);
-    if (seconds_left <= 0)
+    if (seconds_left === 0)
     {
     var y = document.getElementById("Afficher");
     y.style.display = "none";
