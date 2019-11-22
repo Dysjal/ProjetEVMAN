@@ -3,21 +3,29 @@
       <head>
         <meta charset="UTF-8" />
 
-        <link rel="stylesheet" href="./style.css">
         <script src="./Boxe.js"></script>
 
         <title>Clickodrome</title>
       </head>
 
       <body onload="Creation()">
+      	<div id = "menu">
       	<a href="../clickodrome.html">Retour au menu des jeux</a><br>
-      	<button onclick="Lancer();setTimeout(Timer, 3000);" >Lancer le jeu</button>
+      	<button onclick="Lancer();Timer();setTimeout(Timer, 15000);" >Lancer le jeu</button>
+      	 <h1 class = "nbDeClick" id = "nbDeJeu">Nombre de clique que vous venez de faire : </h1>
+          <hi id="ancien"></h1>
+      </div>
+      	 <div id="Jeu">
+          <a> Il vous reste : </a>
+          <a id = "timer_div"></a>
+          <a> secondes </a>
+      </div>
 
-
-      	<div id = " A afficher">
-        <canvas id="myCanvas" width="200" height="100" style="border:0px solid #d3d3d3;" >
-Your browser does not support the HTML5 canvas tag.</canvas>
-</div>
+      	<div id = "Afficher">
+      		 <h1>Nombre de cibles touché  : </h1>
+      		 <h1 id = "touche"></h1>
+        	<canvas id="rond" width="75" height="75" style="border:0px solid #d3d3d3;" onclick="Clicked()" ></canvas>
+       	</div>
        <!--  -->
     </body>
     </html>
