@@ -21,7 +21,6 @@ ctx.stroke();
 
 function Timer(){
     seconds_left = 15;
-    console.log(seconds_left);
     document.getElementById('timer_div').innerHTML = seconds_left;
 
   var x = document.getElementById("Jeu");
@@ -60,7 +59,8 @@ function Creation (){
     x.style.display = "none";
     var z = document.getElementById("nbDeJeu");
     z.style.display = "none";
- 
+    write();
+
 }
 function Clicked (){
   touche++;
@@ -71,4 +71,33 @@ function Clicked (){
   c.style.marginTop =t+"%";
   c.style.marginLeft = l+"%";
   }
+  function write() {
+   var fr = new FileReader(); 
+   fr.onload = function(e) { 
+    console.log(e.target.result) 
+  }; 
+  fr.readAsText("MyFile");
+  }
+
+    /*  function readerSingleFile(e) {
+      document.getElementById('file-input')
+  .addEventListener('change', readSingleFile, false);
+  var file = e.target.files[0];
+  console.log(e.target);
+  if (!file) {
+    return;
+  }
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    var contents = e.target.result;
+    displayContents(contents);
+  };
+  reader.readAsText(file);
+}
+
+function displayContents(contents) {
+  var element = document.getElementById('file-content');
+  element.textContent = contents;
+}*/
+
 

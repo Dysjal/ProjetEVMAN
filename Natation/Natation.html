@@ -1,11 +1,33 @@
 <!DOCTYPE html>
     <html lang="fr">
       <head>
-       
+       <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./style.css">
+        <script src="./Natation.js"></script>
+
+        <title>Clickodrome</title>
       </head>
 
-      <body>
-        
+      	 <body onload="Creation()">
+      	
+      	<div id = "menu">
+      	<a href="../clickodrome.html">Retour au menu des jeux</a><br>
+      	<button onclick="Lancer();Timer();" >Lancer le jeu</button>
+      	 <h1 class = "nbDeClick" id = "nbDeJeu">Nombre de clique que vous venez de faire : </h1>
+          <hi id="ancien"></h1>
+      </div>
+       <div id="Jeu">
+          <a> Il vous reste : </a>
+          <a id = "timer_div"></a>
+          <a> secondes </a>
+      </div>
+      <div id = "Afficher">
+      		 <a>Score actuel : </a>
+      		 <a id = "score"></a><br>
+      		 <button class ="gauche" onclick="clickGauche()">Gauche</button>
+      		 <button class ="droite" onclick="clickDroit()">Droite</button>
+
+       	</div>
        <!--  -->
     </body>
     </html>
