@@ -2,40 +2,48 @@
     <html lang="fr">
       <head>
         <meta charset="UTF-8" />
-
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="./click.js"></script>
+
 
         <title>Clickodrome</title>
       </head>
 
-      <body onclick="incrementer()" onload="classe(0)">
-        <a href="../clickodrome.html">Retour au menu des jeux</a>
+      <body onclick="incrementer()">
+
+
+
         <div id = "affichage">
-          <button onclick="Lancer();setTimeout(Timer, 3000);" >Lancer le jeu</button>
-          <h1 class = "nbDeClick" id = "nbDeJeu">Nombre de clique que vous venez de faire : </h1>
-          <hi id="ancien"></h1>
-            <h1>Classement : </h1>
-           <a id = "class1"> </a>
-           <a id = "class2">2 :</a>
-           <p id = "class3">3 :</p>
-           <p id = "class4">4 :</p>
-           <p id = "class5">5 :</p>
-           <p id = "class6">6 :</p>
-           <p id = "class7">7 :</p>
-           <p id = "class8">8 :</p>
-           <p id = "class9">9 :</p>
-           <p id = "class10">10 :</p>
+          <button onclick="Lancer();setTimeout(Timer, 3000);" >GO !</button>
+          <h1 class = "nbDeClick" id = "nbDeJeu">Your Score:
+          <a id="ancien"></a></h1>
         </div>
         <div class = "ecran" id="Jeu">
-          <a> Il vous reste : </a>
+          <a> You still have : </a>
           <a id = "timer_div"></a>
           <a> secondes </a>
-          <h1>Nombre de clique : </h1>
-          <hi id="insert"></h1>
+          <h1>Number of Clics: <h2 id="insert"></h2> </h1>
         </div>
-          
 
-       <!--  -->
+        <!--Menu-->
+        <nav class="btn-pluss-wrapper">
+         <div href="#" class="btn-pluss">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Nations</a></li>
+            <li><a href="clickodrome.html">Clicodrome</a></li>
+            <li><a href="podium.html">Podium</a></li>
+          </ul>
+         </div>
+        </nav>
+
+        <!--Fin Menu-->
+
+
+
     </body>
+
     </html>

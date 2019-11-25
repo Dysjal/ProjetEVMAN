@@ -16,8 +16,8 @@ body{
 
 #logo{
 position: absolute;
-margin-left: 570px;
-top: 150px;
+margin-left: 37.5%;
+top: 25%;
 }
 
 
@@ -42,7 +42,7 @@ top: 150px;
     transition: 1s;
     box-shadow: 6px 6px 0 #912223;
     transform: skewX(-15deg);
-    margin-top: 500px;
+    margin-top: 33%;
 
 }
 

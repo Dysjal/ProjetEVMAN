@@ -3,40 +3,34 @@
       <head>
        <meta charset="UTF-8" />
         <link rel="stylesheet" href="./style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
         <script src="./Natation.js"></script>
 
         <title>Clickodrome</title>
       </head>
 
       	 <body onload="Creation()">
-      	
+
       	<div id = "menu">
-      	<a href="../clickodrome.html">Retour au menu des jeux</a><br>
-      	<button onclick="Lancer();Timer();" >Lancer le jeu</button>
-      	 <h1 class = "nbDeClick" id = "nbDeJeu">Nombre de clique que vous venez de faire : </h1>
-          <hi id="ancien"></h1>
-            <h1>Classement : </h1>
-           <a id = "class1"> </a>
-           <p id = "class2">2 :</p>
-           <p id = "class3">3 :</p>
-           <p id = "class4">4 :</p>
-           <p id = "class5">5 :</p>
-           <p id = "class6">6 :</p>
-           <p id = "class7">7 :</p>
-           <p id = "class8">8 :</p>
-           <p id = "class9">9 :</p>
-           <p id = "class10">10 :</p>
+      	<button id="retour"><a href="../clickodrome.html">Back to Clickodrome</a></button><br>
+      	<button class="startbutton" onclick="Lancer();Timer();" >Go !</button>
+      	 <h1 class = "nbDeClick" id = "nbDeJeu">Number of Clics : </h1>
+          <h1 id="ancien"></h1>
       </div>
        <div id="Jeu">
-          <a> Il vous reste : </a>
+          <a> Time left : </a>
           <a id = "timer_div"></a>
-          <a> secondes </a>
+          <a> seconds </a>
       </div>
       <div id = "Afficher">
-      		 <a>Score actuel : </a>
+      		 <a>Score : </a>
       		 <a id = "score"></a><br>
-      		 <button class ="gauche" onclick="clickGauche()">Gauche</button>
-      		 <button class ="droite" onclick="clickDroit()">Droite</button>
+      		   <div class="test">
+               <div class="testgauche"><button id ="gauche" onclick="clickGauche()">Left</button></div>
+      		     <div class="testdroite"><button id ="droite" onclick="clickDroit()">Right</button></div>
+             </div>
 
        	</div>
        <!--  -->

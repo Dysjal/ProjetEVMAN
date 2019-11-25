@@ -9,8 +9,9 @@ body {
 }
 
 .drapeaux{
-  width:25%;
+  width:100%;
   margin-top:5%;
+  animation: pulse 5s;
 }
 
 #titre div {
@@ -21,34 +22,11 @@ body {
 }
 
 
-div:last-of-type {  /*disparition des derniers mots*/
-  animation: reveal 7s infinite;
-
-
-
-}
-
-div:last-of-type span { /*rapidité de l'apparition des derniers mots*/
-
-  animation: slidein 50s;
-
-}
-
-/*animation des premiers mots*/
-@keyframes showup {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
-    100% {opacity:1;}
-}
-
-
-
-/*révélation des derniers mots*/
-@keyframes reveal {
-    0% {opacity:0;width:80%;}
-    20% {opacity:1;width:100%;}
-    30% {width:100%px;}
-    80% {opacity:2;}
-    100% {opacity:0;width:100%;}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

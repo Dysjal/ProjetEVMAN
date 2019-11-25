@@ -1,8 +1,158 @@
-.droite{
-	margin-top: 10%;
-	margin-left: 55%;
+body{
+	background-image: url("../imageIndex/piscinev2.png");
+	background-size: cover;
 }
-.gauche{
-	margin-top: 10%;
-	margin-left: 15%;
+
+#retour{
+	padding: 2%;
+	background-color: white;
+
+	color: #d12b1c;
+	font-size: 16px;
+	font-family: 'Righteous', cursive;
+
+	border-radius: 5%;
+	border: solid;
+	border-color: #d12b1c;
+
+	cursor: pointer;
+
+}
+
+#retour a:link{
+	text-decoration: none;
+	color: #d12b1c;
+}
+
+#retour:hover{
+	text-decoration: none;
+	background-color: #fed390;
+}
+
+
+#droite{
+	padding: 10%;
+	background-color: white;
+
+	color: #d12b1c;
+	font-size: 32px;
+	font-family: 'Righteous', cursive;
+
+	border-radius: 50%;
+	border: solid;
+	border-color: #d12b1c;
+
+	cursor: pointer;
+
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+#gauche{
+	padding: 10%;
+	background-color: white;
+
+	color: #d12b1c;
+	font-size: 32px;
+	font-family: 'Righteous', cursive;
+
+	border-radius: 50%;
+	border: solid;
+	border-color: #d12b1c;
+
+	cursor: pointer;
+
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#droite:hover{
+	background-color: #fed390;
+}
+
+#gauche:hover{
+	background-color: #fed390;
+}
+
+.startbutton{
+	border-radius: 50%;
+	background-color: white;
+
+	border: solid;
+	border-color: #d12b1c;
+
+	font-size: 32px;
+	font-family: 'Righteous', cursive;
+	color: #d12b1c;
+	text-align: center;
+	cursor: pointer;
+
+	display: block;
+	margin-top: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3%;
+}
+
+.startbutton:hover{
+	background-color: #fad390;
+}
+
+#menu{
+	font-family: 'Righteous', cursive;
+}
+
+#score{
+	font-family: 'Righteous', cursive;
+	font-size: 48px;
+}
+
+#Afficher{
+	font-family: 'Righteous', cursive;
+	font-size: 32px;
+}
+
+#Jeu{
+	font-family: 'Righteous', cursive;
+	font-size: 32px;
+}
+
+#ancien{
+	font-family: 'Righteous', cursive;
+	font-size: 64px;
+	display: inline;
+	margin-left: 5%;
+	color: white;
+}
+
+#nbDeJeu{
+	color:white;
+	font-size: 50px;
+}
+
+.test{
+	width: 100%;
+	display: inline;
+}
+
+.testdroite{
+	height: 100%;
+	width: 50%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	margin-left: 50%;
+	margin-top: 25%;
+}
+
+.testgauche{
+	height: 100%;
+	width: 50%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	margin-top: 25%;
 }
