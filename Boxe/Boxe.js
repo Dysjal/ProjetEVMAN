@@ -1,7 +1,7 @@
 var touche = 0;
 var seconds_left ;
 var nbDeJeu = 0;
-
+var classement = [42,41,37,34,29,25,22,22,20,19];
 function Lancer() {
   touche = 0;
   document.getElementById('touche').innerHTML = touche;
@@ -37,7 +37,6 @@ function Timer(){
 
    var interval = setInterval(function() {
     document.getElementById('timer_div').innerHTML = --seconds_left;
-    console.log(seconds_left);
     if (seconds_left === 0)
     {
     var y = document.getElementById("Afficher");
@@ -47,6 +46,7 @@ function Timer(){
     var z = document.getElementById("menu");
     z.style.display = "block";
     document.getElementById("ancien").innerHTML = touche;
+    classe(touche);
         clearInterval(interval);
     }
 }, 1000);
@@ -59,7 +59,8 @@ function Creation (){
     x.style.display = "none";
     var z = document.getElementById("nbDeJeu");
     z.style.display = "none";
-    write();
+        classe(touche);
+
 
 }
 function Clicked (){
@@ -71,33 +72,26 @@ function Clicked (){
   c.style.marginTop =t+"%";
   c.style.marginLeft = l+"%";
   }
-  function write() {
-   var fr = new FileReader(); 
-   fr.onload = function(e) { 
-    console.log(e.target.result) 
-  }; 
-  fr.readAsText("MyFile");
+  function classe (point){
+    for ( var i =0; i<10; i++){
+      if(point >= classement[i]){
+        classement[i]=point;
+        i=10;
+
+      }
+     }
+     document.getElementById("class1").innerHTML ="1 : "+ classement[0];
+     document.getElementById("class2").innerHTML ="2 : "+ classement[1];
+     document.getElementById("class3").innerHTML ="3 : "+ classement[2];
+     document.getElementById("class4").innerHTML ="4 : "+ classement[3];
+     document.getElementById("class5").innerHTML ="5 : "+ classement[4];
+     document.getElementById("class6").innerHTML ="6 : "+ classement[5];     
+     document.getElementById("class7").innerHTML ="7 : "+ classement[6];
+     document.getElementById("class8").innerHTML ="8 : "+ classement[7];
+     document.getElementById("class9").innerHTML ="9 : "+ classement[8];
+    document.getElementById("class10").innerHTML ="10 : "+ classement[9];
+
+
+
+   
   }
-
-    /*  function readerSingleFile(e) {
-      document.getElementById('file-input')
-  .addEventListener('change', readSingleFile, false);
-  var file = e.target.files[0];
-  console.log(e.target);
-  if (!file) {
-    return;
-  }
-  var reader = new FileReader();
-  reader.onload = function(e) {
-    var contents = e.target.result;
-    displayContents(contents);
-  };
-  reader.readAsText(file);
-}
-
-function displayContents(contents) {
-  var element = document.getElementById('file-content');
-  element.textContent = contents;
-}*/
-
-

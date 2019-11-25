@@ -9,12 +9,23 @@
         <title>Clickodrome</title>
       </head>
 
-      <body onclick="incrementer()">
+      <body onclick="incrementer()" onload="classe(0)">
         <a href="../clickodrome.html">Retour au menu des jeux</a>
         <div id = "affichage">
           <button onclick="Lancer();setTimeout(Timer, 3000);" >Lancer le jeu</button>
           <h1 class = "nbDeClick" id = "nbDeJeu">Nombre de clique que vous venez de faire : </h1>
           <hi id="ancien"></h1>
+            <h1>Classement : </h1>
+           <a id = "class1"> </a>
+           <a id = "class2">2 :</a>
+           <p id = "class3">3 :</p>
+           <p id = "class4">4 :</p>
+           <p id = "class5">5 :</p>
+           <p id = "class6">6 :</p>
+           <p id = "class7">7 :</p>
+           <p id = "class8">8 :</p>
+           <p id = "class9">9 :</p>
+           <p id = "class10">10 :</p>
         </div>
         <div class = "ecran" id="Jeu">
           <a> Il vous reste : </a>
